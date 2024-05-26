@@ -36,6 +36,25 @@ aside {
     grid-row: 1 / -1;
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dashboard-logo, 
+li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.dashboard-logo,
+nav.top {
+    margin-bottom: 20px;
 }
 
 /* header */
@@ -50,16 +69,6 @@ header {
     align-items: center;
     gap: 20px;
     margin-bottom: 10px;
-}
-
-nav.top {
-    display: flex;
-    flex-wrap: wrap;    
-}
-
-nav.top > * {
-    flex-basis: calc(100% / 2);
-    border: 1px solid black;
 }
 
 input {
@@ -120,11 +129,11 @@ main {
     background-color: #e2e8f0;
     grid-column: 2 / -1;
     grid-row: 2 / -1;
-    padding: 20px;    
+    padding: 20px;
     
     display: grid;    
     grid-template-columns: repeat(9, auto);
-    grid-template-rows: auto repeat(4, 1fr) auto repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto) repeat(4, 1fr);
     gap: 10px 20px;    
 }
 
